@@ -30,12 +30,12 @@ button .h3{
     line-height: 36px;
     color: #000000;
 }
-button{
+.button{
     min-width: 15vw;
     height: 5vh;
     background: transparent;
     border-radius: 70px;
 }
-button:hover{
+.button:hover{
     background-color: #84CAE7;
 }

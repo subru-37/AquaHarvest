@@ -1,11 +1,18 @@
-import React from 'react';
+import React,{useState, useContext, createContext} from 'react';
 import { Route, Routes } from "react-router-dom";
 import Landing from './pages/landing/Landing';
 import Onboarding from './pages/Onboarding/Onboarding';
 import Dashboard from './pages/dashboard/Dashboard'
 import Addfarm from './pages/addfarm/Addfarm';
+export const ThemeContext  = createContext();
 export default function App() {
+  const [state, setState] = useState({
+    Name:'',
+    Bio: '',
+    Location: '',
+})
   return (
+    <ThemeContext.Provider value={{state,setState}}>
     <div>
       <Routes>
         <Route path='/' element={<Landing/>}></Route>
@@ -14,5 +21,6 @@ export default function App() {
         <Route path='/addFarm' element={<Addfarm/>}></Route>
       </Routes>
     </div>
+    </ThemeContext.Provider>
   )
 }
