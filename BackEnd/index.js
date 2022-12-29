@@ -7,3 +7,10 @@ mongoose.connect(
       useNewUrlParser: true,
       useUnifiedTopology: true
 }).then(() => console.log("Database connected!"))
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+
+app.listen(process.env.PORT||3000);
+console.log('You are listening to port 3000');

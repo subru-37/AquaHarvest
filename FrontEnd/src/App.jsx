@@ -1,18 +1,22 @@
-import React,{useState, useContext, createContext} from 'react';
+import React, { useState, useContext, createContext } from "react";
 import { Route, Routes } from "react-router-dom";
-import Landing from './pages/landing/Landing';
-import Onboarding from './pages/Onboarding/Onboarding';
-import Dashboard from './pages/dashboard/Dashboard'
-import Addfarm from './pages/addfarm/Addfarm';
+import Landing from "./pages/landing/Landing";
+import Onboarding from "./pages/Onboarding/Onboarding";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Addfarm from "./pages/addfarm/Addfarm";
+import Marketplace from './pages/marketplace/Marketplace';
+import Signup from "./pages/auth/signup";
+import SignIn from "./pages/auth/signin";
+// import { initialize } from "../firebase";
+
 import Addtank from './pages/addtank/Addtank';
-export const ThemeContext  = createContext();
+export const ThemeContext = createContext();
 export default function App() {
+  // initialize();
   const [state, setState] = useState({
     Name:'',
     Bio: '',
     Location: '',
-    tname:'',
-    fishes:''
 })
   return (
     <ThemeContext.Provider value={{state,setState}}>
@@ -22,9 +26,8 @@ export default function App() {
         <Route path="/onboarding" element={<Onboarding/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path='/addFarm' element={<Addfarm/>}></Route>
-        <Route path='/addTank' element={<Addtank/>}></Route>
       </Routes>
     </div>
     </ThemeContext.Provider>
-  )
+  );
 }
