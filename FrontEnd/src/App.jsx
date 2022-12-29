@@ -1,5 +1,6 @@
 import React, { useState, useContext, createContext } from "react";
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Landing from "./pages/landing/Landing";
 import Onboarding from "./pages/Onboarding/Onboarding";
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -7,12 +8,12 @@ import Addfarm from "./pages/addfarm/Addfarm";
 import Marketplace from './pages/marketplace/Marketplace';
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
-// import { initialize } from "../firebase";
+import initialize from "../firebase";
 
 import Addtank from './pages/addtank/Addtank';
 export const ThemeContext = createContext();
 export default function App() {
-  // initialize();
+  initialize();
   const [state, setState] = useState({
     Name:'',
     Bio: '',
