@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingImg from "../../images/background.png"
 import "./landing.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -10,9 +10,11 @@ export default function Landing() {
             Aqua Harvest
         </h2>
         <div className='section2'>
+          <Link to="/onboarding">
             <button className='.button'>
                 <h3 className='h3'>Getting Started</h3>
             </button>
+          </Link>
         </div>
     </div>
   )

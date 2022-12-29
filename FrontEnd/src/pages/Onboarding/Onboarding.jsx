@@ -6,7 +6,7 @@ const Onboarding = () => {
   return (
     <div className='onb-container'>
         <div className='firstPara'></div>
-        <Link to="/addTank"><button>Add Existing Tank</button></Link>
+        <Link to="/addFarm"><button>Load new farm</button></Link>
         <a href="https://en.wikipedia.org/wiki/Fish_farming">New to fish farming? Check out details here</a>
     </div>
   )
