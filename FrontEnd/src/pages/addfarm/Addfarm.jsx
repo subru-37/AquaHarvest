@@ -9,6 +9,15 @@ export default function Addfarm() {
         Bio: '',
         Location: '',
     })
+    function handleSubmit(event){
+        console.log(state)
+        setState({
+            Name: "",
+            Location:'',
+            Bio:''
+          });
+          event.preventDefault();
+    }
     function handleChange(event){
         const { name, value } = event.target;
         setState((preValue) => {
@@ -21,12 +30,18 @@ export default function Addfarm() {
   return (
     <div style={{display:'flex', alignItems:'center', flexDirection:'column',justifyContent:'center'}}>
         <div style={{backgroundColor: '#4CE0D2', height: '40vh', width: '100vw',position:'absolute', top:'0px', display:'flex',alignItems:'flex-start', justifyContent:'center'}}>
-            <p style={{fontFamily: "'Poppins', Sans-serif", paddingTop: '50px',fontSize:'1.5rem'}}>Add a new farm</p>
+            <p style={{fontFamily: "'Poppins', Sans-serif", paddingTop: '50px',fontSize:'1.7rem'}}>Add a new farm</p>
         </div>
-        <form className='parent-form'>
+        <form onSubmit={handleSubmit} className='parent-form'>
             <div className='child-farm'>
                 <h4 style={{width:'30%'}}>Enter Farm Name: </h4>
                 <TextField
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Farm"
                     name='Name'
                     required
                     autoComplete='off'
@@ -53,6 +68,12 @@ export default function Addfarm() {
             <div className='child-farm'>
                 <h4 style={{width:'30%'}}>Enter Bio Details: </h4>
                 <TextField
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Bio"
                     name='Bio'
                     required
                     autoComplete='off'
@@ -79,7 +100,13 @@ export default function Addfarm() {
             <div className='child-farm'>
                 <h4 style={{width:'30%'}}>Enter Location: </h4>
                 <TextField
-                    name='Name'
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Location"
+                    name='Location'
                     required
                     autoComplete='off'
                     value={state.Location}
@@ -102,7 +129,7 @@ export default function Addfarm() {
                     }} 
                 /> 
             </div>
-            <Button><p style={{color:'black',fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></Button>
+            <button style={{borderRadius:'15px',background:'transparent', width:'150px'}}><p style={{color:'black',fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
         </form>
     </div>
   )
