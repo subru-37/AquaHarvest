@@ -1,0 +1,39 @@
+.user-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
+    margin: 2rem;
+    padding-top: 1rem;
+    color: #fff;
+}
+.tank-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
+    margin: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+#profile-pic{
+    width: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.left-div-top{
+    background: #136F63;
+    width: 20vw;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+}
+.left-div{
+    height: 100vh;
+    background-color: #89C9C5;
+    width: 23vw;
+    padding-top: 1.5rem;
+}
