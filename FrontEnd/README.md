@@ -9,7 +9,7 @@ Intro
 2. [Team Members](#team-members)
 3. [Tech Stack](#tech-stack)
 4. [Project Demo](#project-demo)
-5. [Installation](#installation)
+5. [Assumptions & References](#assumptions-&-references)
 
 
 ## Project Description
@@ -35,7 +35,11 @@ Problem Statement :  :-
 1. [Aldrin Jenson](https://github.com/aldrinjenson)
 1. [Hanna Salam](https://github.com/hannasalam)
 
-
+## Assumptions & References 
+ ### Assumptions
+ 
+ ### References
+ 
 ## 🔧 Project Demo:
 
 
