@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Link, NavLink } from 'react-router-dom';
 
 
-const pages = [{name: 'Dashboard', url:'/dashboard'},{name: 'Account', url:'/acc'}];
+const pages = [{name: 'Dashboard', url:'/dashboard'},{name: 'Market', url:'/marketplace'},{name: 'Account', url:'/acc'}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
