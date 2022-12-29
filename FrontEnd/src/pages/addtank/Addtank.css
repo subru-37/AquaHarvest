@@ -1,0 +1,29 @@
+.button2:hover{
+    background-color: black;
+}
+.button2 p:hover{
+    color: #22AAA1;
+}
+.button2{
+    background-color: green;
+}
+.parent-form1{
+    width: 60%;
+    min-height: 50%;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+}
+.child-farm1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Poppins',sans-serif;
+    margin: 10px;
+    width: 70%;
+}
