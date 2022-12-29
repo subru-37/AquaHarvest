@@ -1,22 +1,21 @@
-import React,{useState, useEffect} from 'react';
+import React,{useContext} from 'react';
 import './Addfarm.css';
 import TextField from '@mui/material/TextField';
-import { Button } from '@mui/material';
+import { ThemeContext } from '../../App';
+import { useNavigate } from 'react-router';
 
 export default function Addfarm() {
-    const [state, setState] = useState({
-        Name:'',
-        Bio: '',
-        Location: '',
-    })
+    const navigate = useNavigate();
+    const {state,setState} = useContext(ThemeContext)
     function handleSubmit(event){
-        console.log(state)
+        console.log(state) //command to push to database?
         setState({
             Name: "",
             Location:'',
             Bio:''
           });
           event.preventDefault();
+          navigate("/addTank");
     }
     function handleChange(event){
         const { name, value } = event.target;

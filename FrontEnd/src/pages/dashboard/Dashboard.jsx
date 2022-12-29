@@ -3,12 +3,17 @@ import AlertCardMain from '../../components/alert-main/AlertCardMain'
 import Navbar from '../../components/Navbar/Navbar'
 import User from "../../images/user.jpg"
 import "./dashboard.css"
+import data from "../../data/tanks"
+import Tank from "../../components/Tanks/Tank"
 
 const Dashboard = () => {
+  const tanks = data.map((data) => {
+    return <Tank key={data.id} item={data}/>
+  })
   return (
     <>
-        <Navbar/>
-        <div>
+        <div className='nav'><Navbar/></div>
+        <div className='dashboard-container'>
           <div className='left-div'>
             <div className='left-div-top'>
                 <div className='user-info'>
@@ -28,7 +33,9 @@ const Dashboard = () => {
               </div>  
                 <div><AlertCardMain/></div>
               </div>
-            <div></div>
+            <div className='right-div'>
+              {tanks}
+            </div>
         </div>
     </>
   )

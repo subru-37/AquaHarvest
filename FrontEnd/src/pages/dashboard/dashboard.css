@@ -37,3 +37,15 @@
     width: 23vw;
     padding-top: 1.5rem;
 }
+.right-div{
+    width: 77vw;
+    height: 100vh;
+    background: #156056;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+}
