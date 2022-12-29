@@ -8,9 +8,8 @@ Intro
 1. [What is AquaHarvest?](#project-description)
 2. [Team Members](#team-members)
 3. [Tech Stack](#tech-stack)
-4. [Project Demo](#project-demo)
-5. [Assumptions & References](#assumptions-&-references)
-
+4. [Assumptions & References](#assumptions-&-references)
+5. [Project Demo](#project-demo)
 
 ## Project Description
 
