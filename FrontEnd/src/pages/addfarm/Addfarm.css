@@ -8,12 +8,15 @@
     border: 2px black dotted;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 }
 .child-farm{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     font-family: 'Poppins',sans-serif;
+    margin: 10px;
+    width: 70%;
 }
