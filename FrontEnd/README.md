@@ -24,10 +24,10 @@ Problem Statement :  :-
 - 
  
 
-#Tech Stack
+## Tech Stack
  MERN Stack, Material UI
  
-# Team Members
+## Team Members
 ### **Team Name** : Ryzen Sharks
 1. [Mrinalini Nair Ani](https://github.com/hacksh4w/)
 1. [Jithin Jagadeesh](https://github.com/jithin-j)
