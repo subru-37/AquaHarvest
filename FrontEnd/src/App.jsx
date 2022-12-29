@@ -1,26 +1,32 @@
-import React,{useState, useContext, createContext} from 'react';
+import React, { useState, useContext, createContext } from "react";
 import { Route, Routes } from "react-router-dom";
-import Landing from './pages/landing/Landing';
-import Onboarding from './pages/Onboarding/Onboarding';
-import Dashboard from './pages/dashboard/Dashboard'
-import Addfarm from './pages/addfarm/Addfarm';
-export const ThemeContext  = createContext();
+import Landing from "./pages/landing/Landing";
+import Onboarding from "./pages/Onboarding/Onboarding";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Addfarm from "./pages/addfarm/Addfarm";
+import Signup from "./pages/auth/signup";
+import SignIn from "./pages/auth/signin";
+import initialize from "../firebase";
+
 export default function App() {
+  initialize();
   const [state, setState] = useState({
-    Name:'',
-    Bio: '',
-    Location: '',
-})
+    Name: "",
+    Bio: "",
+    Location: "",
+  });
   return (
-    <ThemeContext.Provider value={{state,setState}}>
-    <div>
-      <Routes>
-        <Route path='/' element={<Landing/>}></Route>
-        <Route path="/onboarding" element={<Onboarding/>}></Route>
-        <Route path="/dashboard" element={<Dashboard/>}></Route>
-        <Route path='/addFarm' element={<Addfarm/>}></Route>
-      </Routes>
-    </div>
+    <ThemeContext.Provider value={{ state, setState }}>
+      <div>
+        <Routes>
+          <Route exact path='/' element={<Landing />}></Route>
+          <Route path='/signup' element={<Signup />}></Route>
+          <Route path='/signin' element={<SignIn />}></Route>
+          <Route path='/onboarding' element={<Onboarding />}></Route>
+          <Route path='/dashboard' element={<Dashboard />}></Route>
+          <Route path='/addFarm' element={<Addfarm />}></Route>
+        </Routes>
+      </div>
     </ThemeContext.Provider>
-  )
+  );
 }
