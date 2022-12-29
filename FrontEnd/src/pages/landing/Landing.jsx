@@ -1,7 +1,9 @@
 import React from 'react'
+import LandingImg from "../../images/background.png"
+import "./landing.css"
 
 export default function Landing() {
   return (
-    <div>Landing</div>
+    <div className='container'>Landing</div>
   )
 }
