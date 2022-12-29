@@ -1,0 +1,9 @@
+.alert-card{
+    height: 5rem;
+    width: 19rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}

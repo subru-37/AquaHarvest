@@ -1,0 +1,25 @@
+.parent-form{
+    width: 60vw;
+    min-height: 50vh;
+    margin-top: 15vh;
+    background-color: white;
+    z-index: 12;
+    border-radius: 25px;
+    border: 2px black dotted;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.child-farm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Poppins',sans-serif;
+    margin: 10px;
+    width: 70%;
+}
+.button1{
+    border-radius: 15px;
+}
