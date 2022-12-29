@@ -17,6 +17,11 @@ export default function App() {
     Name:'',
     Bio: '',
     Location: '',
+    tname:'',
+    fishes:'',
+    Email:'',
+    Password:'',
+    CPassword:''
 })
   return (
     <ThemeContext.Provider value={{state,setState}}>
@@ -26,6 +31,7 @@ export default function App() {
         <Route path="/onboarding" element={<Onboarding/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path='/addFarm' element={<Addfarm/>}></Route>
+        <Route path='/addTank' element={<Addtank/>}></Route>
       </Routes>
     </div>
     </ThemeContext.Provider>

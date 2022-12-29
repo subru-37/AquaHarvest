@@ -80,14 +80,15 @@ export default function Addfarm() {
                 />
             </div>
             <Autocomplete
-              ref={ref0}
-              id="combo-box-Dosage"
-              onChange={()=>(handleChangeAuto1)}
-              name='fishes'
-              options={options}
-              onInputValue={state.fishes}
-              sx={{width:'40vw',margingTop:'50px'}}
-              renderInput={(params) => <TextField {...params}
+                ref={ref0}
+                onChange={handleChangeAuto1}
+                inputValue={state.fishes}
+                onInputChange={handleChangeAuto1}
+                name='fishes'
+                id="controllable-states-demo"
+                sx={{width:'40vw',margingTop:'50px'}}
+                options={options}
+                renderInput={(params) => <TextField {...params}
                                             label="Enter Number of fishes" 
                                             required
                                             sx={{

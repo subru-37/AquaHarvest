@@ -9,11 +9,14 @@ export default function Addfarm() {
     const {state,setState} = useContext(ThemeContext)
     function handleSubmit(event){
         console.log(state) //command to push to database?
-        setState({
-            Name: "",
-            Location:'',
-            Bio:''
-          });
+        // setState({
+        //     Name: "",
+        //     Location:'',
+        //     Bio:'',
+        //     Email:'',
+        //     Password:'',
+        //     CPassword:''
+        //   });
           event.preventDefault();
           navigate("/addTank");
     }
@@ -45,6 +48,104 @@ export default function Addfarm() {
                     required
                     autoComplete='off'
                     value={state.Name}
+                    onChange={handleChange} 
+                    sx={{
+                    width: '70%',
+                    '& .MuiOutlinedInput-root':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#4CE0D2',
+                      },
+                    },
+                    '& .MuiOutlinedInput-root:hover':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      }
+                    }
+                    }} 
+                /> 
+            </div>
+            <div className='child-farm'>
+                <h4 style={{width:'30%'}}>Enter Email: </h4>
+                <TextField
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Email"
+                    name='Email'
+                    required
+                    autoComplete='off'
+                    value={state.Email}
+                    onChange={handleChange} 
+                    sx={{
+                    width: '70%',
+                    '& .MuiOutlinedInput-root':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#4CE0D2',
+                      },
+                    },
+                    '& .MuiOutlinedInput-root:hover':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      }
+                    }
+                    }} 
+                /> 
+            </div>
+            <div className='child-farm'>
+                <h4 style={{width:'30%'}}>Enter Password: </h4>
+                <TextField
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Password"
+                    name='Password'
+                    required
+                    autoComplete='off'
+                    type='password'
+                    value={state.Password}
+                    onChange={handleChange} 
+                    sx={{
+                    width: '70%',
+                    '& .MuiOutlinedInput-root':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#4CE0D2',
+                      },
+                    },
+                    '& .MuiOutlinedInput-root:hover':{
+                      '& fieldset':{
+                        borderColor: '#4CE0D2'
+                      }
+                    }
+                    }} 
+                /> 
+            </div>
+            <div className='child-farm'>
+                <h4 style={{width:'30%'}}>Confirm Password: </h4>
+                <TextField
+                    InputProps={{style: {color:'black'}}}
+                    InputLabelProps={{
+                    style: { color: '#22AAA1'},
+                    }}
+                    variant='outlined'
+                    label="Password"
+                    name='CPassword'
+                    required
+                    autoComplete='off'
+                    type='password'
+                    value={state.CPassword}
                     onChange={handleChange} 
                     sx={{
                     width: '70%',
