@@ -6,10 +6,11 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Addfarm from "./pages/addfarm/Addfarm";
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
-import initialize from "../firebase";
+// import { initialize } from "../firebase";
 
+export const ThemeContext = createContext();
 export default function App() {
-  initialize();
+  // initialize();
   const [state, setState] = useState({
     Name: "",
     Bio: "",
