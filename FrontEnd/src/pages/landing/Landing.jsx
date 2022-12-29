@@ -12,7 +12,7 @@ export default function Landing() {
         <div className='section2'>
           <Link to="/onboarding">
             <button className='.button'>
-                <h3 className='h3'>Getting Started</h3>
+               <h3 className='h3'>Getting Started</h3>
             </button>
           </Link>
         </div>
