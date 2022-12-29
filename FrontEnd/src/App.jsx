@@ -32,6 +32,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path='/addFarm' element={<Addfarm/>}></Route>
         <Route path='/addTank' element={<Addtank/>}></Route>
+        <Route path='/marketplace' element={<Marketplace/>}></Route>
       </Routes>
     </div>
     </ThemeContext.Provider>
