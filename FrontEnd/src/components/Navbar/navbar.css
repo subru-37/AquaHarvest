@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: fixed;
+    height: 8vh;
+    width: 100vw;
+    background: grey
+}
