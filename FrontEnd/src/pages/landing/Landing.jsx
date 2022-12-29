@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingImg from "../../images/background.png"
 import "./landing.css";
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -11,7 +11,7 @@ export default function Landing() {
         </h2>
         <div className='section2'>
             <button className='.button'>
-                <Link style={{textDecoration: 'none'}}><h3 className='h3'>Getting Started</h3></Link>
+                <h3 className='h3'>Getting Started</h3>
             </button>
         </div>
     </div>
