@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import { signUpWithEmail } from "../../../firebase";
+import { CssVarsProvider } from "@mui/joy/styles";
+import Sheet from "@mui/joy/Sheet";
+import Typography from "@mui/joy/Typography";
+import TextField from "@mui/joy/TextField";
+import Button from "@mui/joy/Button";
+import Link from "@mui/joy/Link";
+import { useState } from "react";
 
 export default function signin() {
-  const handleSignup = () => {
-    if (password !== confirmPassword) {
-      alert("unmatched password");
-      return;
-    }
-    signUpWithEmail(email, password);
-  };
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   return (
     <CssVarsProvider>
       <main>
-        {/* <ModeToggle /> */}
         <Sheet
           sx={{
             width: 300,
@@ -48,6 +46,7 @@ export default function signin() {
             type='email'
             placeholder='johndoe@email.com'
             value={email}
+            onChange={(e) => setEmail(e.target.value)}
             label='Email'
           />
           <TextField
@@ -55,18 +54,18 @@ export default function signin() {
             type='password'
             value={password}
             placeholder='password'
+            onChange={(e) => setPassword(e.target.value)}
             label='Password'
           />
           <TextField
             name='confirm password'
-            value={confirmPassword}
             type='password'
             placeholder='confirm password'
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
             label='Confirm Password'
           />
-          <Button onClick={handleSignup} sx={{ mt: 1 }}>
-            Sign Up
-          </Button>
+          <Button sx={{ mt: 1 /* margin top */ }}>Sign Up</Button>
           <Typography
             endDecorator={<Link href='/signin'>Log In</Link>}
             fontSize='sm'
