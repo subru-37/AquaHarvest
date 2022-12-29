@@ -4,6 +4,7 @@ import Landing from "./pages/landing/Landing";
 import Onboarding from "./pages/Onboarding/Onboarding";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Addfarm from "./pages/addfarm/Addfarm";
+import Marketplace from './pages/marketplace/Marketplace';
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
 // import { initialize } from "../firebase";
@@ -26,6 +27,7 @@ export default function App() {
           <Route path='/onboarding' element={<Onboarding />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/addFarm' element={<Addfarm />}></Route>
+          <Route path='/marketplace' element={<Marketplace/>}></Route>
         </Routes>
       </div>
     </ThemeContext.Provider>
