@@ -11,13 +11,9 @@ export default function Addfarm() {
     const [dis, setDis] = useState(false)
     const {state,setState} = useContext(ThemeContext);
     const [fishes, setFishes] = useState(0);
-    useEffect(()=>{
-        var x = document.getElementById("number-of-fishes").value;
-        setFishes(x);
-        console.log(fishes);
-    },[fishes])
     const ref0 = useRef();
     function handleSubmit(event){
+        navigate('/addFish')
         // console.log(state)
         // setState({
         //     tname: '',
@@ -36,7 +32,7 @@ export default function Addfarm() {
     //       }
     //     )
     // }
-    const navigate = useNavigate()
+    const navigate = useNavigate();  
     function handleChange(event){
         const { name, value } = event.target;
         setState((preValue) => {
@@ -89,7 +85,7 @@ export default function Addfarm() {
             {/* #22AAA1   #4CE0D2 */}
             <div style={{width: '40vw', display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',marginBottom:'30px'}}>
             <label style={{fontSize:'1.3rem',width:'50%'}}>Enter number of fishes:</label>
-                <select id='number-of-fishes' name='number-of-fishes' style={{width:'50%',borderColor:'#22AAA1',height:'50px',borderRadius:'5px'}}>
+                <select ref={ref0} onChange={handleChange} value={state.ftype} id='number-of-fishes' name='ftype' style={{width:'50%',borderColor:'#22AAA1',height:'50px',borderRadius:'5px'}}>
                     <option value={1} style={{backgroundColor:'#22AAA1',color:'black'}}>1</option>
                     <option value={2} style={{backgroundColor:'#22AAA1',color:'black'}}>2</option>
                     <option value={3} style={{backgroundColor:'#22AAA1',color:'black'}}>3</option>
@@ -97,9 +93,7 @@ export default function Addfarm() {
                 </select>
             </div>
             </div>
-            <button onClick={()=>{
-                navigate('/addFish')
-            }} className='button2'><p style={{fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
+            <button className='button2'><p style={{fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
 
         </form>
         

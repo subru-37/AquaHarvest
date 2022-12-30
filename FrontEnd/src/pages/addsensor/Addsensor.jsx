@@ -17,13 +17,14 @@ export default function Addsensor() {
     //     console.log(fishes);
     // },[fishes])
     // const ref0 = useRef();
-    // function handleSubmit(event){
-    //     console.log(state)
-    //     setState({
-    //         fishes:0
-    //       });
-    //       event.preventDefault();
-    // }
+    function handleSubmit(event){
+        navigate('/dashboard')
+        // console.log(state)
+        // setState({
+        //     fishes:0
+        //   });
+          event.preventDefault();
+    }
     const navigate = useNavigate()
     function handleChange(event){
         const { name, value } = event.target;
@@ -40,7 +41,7 @@ export default function Addsensor() {
             <button onClick={()=>(setDis(true))} className='button2'><p>Add A New Sensor</p><AddIcon sx={{'& .MuiSvgIcon-root':{color:'black',marginLeft:'15px',border:'2px black solid',borderRadius:'5px'},'& .MuiSvgIcon-root:hover':{color:'#4CE0D2',borderColor:'#4CE0D2'}}} /></button>
         </div>
         <div style={{zIndex: dis ? '1000000': '0', display: dis ? 'flex' : 'none',alignItems:'center', flexDirection:'column',justifyContent:'center', position: 'absolute', height:'90vh',width:'90vw', boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2)', backgroundColor: 'white',top:'0' }}>
-        <form className='parent-form1'>
+        <form onSubmit={handleSubmit} className='parent-form1'>
             <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <h2>Enter Sensor Name: </h2>
                 <TextField
@@ -77,9 +78,7 @@ export default function Addsensor() {
             {/* <img href="https://thumbs.dreamstime.com/b/fresh-sardine-fish-18086703.jpg" alt='fish image' style={{height:'200px',weight:'300px'}}></img> */}
             {/* #22AAA1   #4CE0D2 */}
             </div>
-            <button onClick={()=>{
-                navigate('/dashboard')
-            }} className='button2'><p style={{fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
+            <button className='button2'><p style={{fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
 
         </form>
         

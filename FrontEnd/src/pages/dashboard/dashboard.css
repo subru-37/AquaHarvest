@@ -3,9 +3,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 15vw;
-    margin: 2rem;
+    margin: 0 2rem;
+    margin-top: 1.5rem;
     padding-top: 1rem;
     color: #fff;
+}
+*{
+    font-family: 'Poppins',sans-serif;
 }
 .tank-info{
     display: flex;
