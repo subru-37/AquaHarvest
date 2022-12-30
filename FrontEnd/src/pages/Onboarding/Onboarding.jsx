@@ -18,7 +18,7 @@ const Onboarding = () => {
           <div className='LoadTank'>
             <img src={user} alt="" />
             <p>New to fish farming?</p>
-            <a href="">Check out details here</a>
+            <a href="https://en.wikipedia.org/wiki/Fish_farming">Check out details here</a>
           </div>
         </div>
     </div>
