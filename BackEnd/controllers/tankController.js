@@ -38,7 +38,7 @@ module.exports = function(app){
         }
     });
     //write a get function to get tank details from tank collection
-    app.get("/getTank", async (req, res) => {
+    app.get("/getAllTank", async (req, res) => {
         res.setHeader('Access-Control-Allow-Credentials', true)
         res.setHeader('Access-Control-Allow-Origin', '*')
         // another common pattern

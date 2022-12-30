@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const TankController = require("./controllers/tankController");
 const FishController = require("./controllers/fishController");
-
+const TaskController = require("./controllers/taskController");
 mongoose.connect(
     'mongodb+srv://hanna:passwordsss@cluster0.0b10im5.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true}));
 
 TankController(app);
 FishController(app);
-
+TaskController(app);
 
 app.listen(process.env.PORT||3000);
 console.log('You are listening to port 3000');
