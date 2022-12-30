@@ -5,11 +5,9 @@ const mongoose = require("mongoose");
 const farmController = require("./controllers/farmController");
 const TankController = require("./controllers/tankController");
 const FishController = require("./controllers/fishController");
-
-mongoose
-  .connect(
-    "mongodb+srv://hanna:passwordsss@cluster0.0b10im5.mongodb.net/?retryWrites=true&w=majority",
-    {
+const TaskController = require("./controllers/taskController");
+mongoose.connect(
+    'mongodb+srv://hanna:passwordsss@cluster0.0b10im5.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }
@@ -21,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 TankController(app);
 FishController(app);
+TaskController(app);
 farmController(app);
 
 app.listen(process.env.PORT || 3000);

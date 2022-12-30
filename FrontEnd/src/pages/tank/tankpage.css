@@ -1,0 +1,4 @@
+.tanksContainer{
+    display: flex;
+    flex-direction: row;
+}
