@@ -8,8 +8,8 @@ import Marketplace from './pages/marketplace/Marketplace';
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
 // import { initialize } from "../firebase";
-
 import Addtank from './pages/addtank/Addtank';
+import TankPage from "./pages/tank/TankPage";
 export const ThemeContext = createContext();
 export default function App() {
   // initialize();
@@ -33,6 +33,7 @@ export default function App() {
         <Route path='/addFarm' element={<Addfarm/>}></Route>
         <Route path='/addTank' element={<Addtank/>}></Route>
         <Route path='/marketplace' element={<Marketplace/>}></Route>
+        <Route path='/tank/:tankName' element={<TankPage/>}></Route>
       </Routes>
     </div>
     </ThemeContext.Provider>

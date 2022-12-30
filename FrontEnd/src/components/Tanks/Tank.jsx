@@ -1,5 +1,6 @@
 import React from 'react'
 import "./tank.css"
+import { Link } from 'react-router-dom'
 
 const Tank = (props) => {
   return (
@@ -18,6 +19,7 @@ const Tank = (props) => {
             <div className='info-detail'>
                 <div>O2 Level:</div> <div>{props.item.O2}%</div>
             </div>
+            <Link to={`/tank/${props.item.name}`}>More..</Link>
         </div>
     </div>
   )
