@@ -15,14 +15,15 @@ export const ThemeContext = createContext();
 export default function App() {
   initialize();
   const [state, setState] = useState({
-    Name: "",
-    Bio: "",
-    Location: "",
+    Name: "yo",
+    bio: "yo",
+    location: "Kochi",
     tname: "",
+    farmName: "fresh farm",
     fishes: "",
-    Email: "",
-    Password: "",
-    CPassword: "",
+    email: "john@gmail.com",
+    password: "1234",
+    confirmPassword: "1234",
   });
   return (
     <ThemeContext.Provider value={{ state, setState }}>

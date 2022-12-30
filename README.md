@@ -1,6 +1,6 @@
 # **<div align="center">AquaHarvest</div>**  
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"><img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white"><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"><img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"><ing src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"><img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"><img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"><ing src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E">
 
 ## Table of Contents
 1. [What is AquaHarvest?](#project-description)
@@ -25,10 +25,6 @@ The Problem :
 # Our Solution
 - Create a platform for a new individual to start fish farm cultivation from scratch and earn a livelihood selling fish produce
 - The platform will have both seller and buyer side, primarily focussed on the seller side.
-
-
-## Tech Stack
- MERN Stack, Material UI, Firebase
  
 ## For the seller:
 - When he first logs in, show him resources and initial set of guidelines/curated training videos showing the benefits of fish farm cultivation,
@@ -76,7 +72,14 @@ The Problem :
 1. [Subramani E](https://github.com/subru-37)
 
 
-## Assumptions 
+## Tech Stack
+ MERN Stack, Material UI, Firebase
+	
+## Assumptions  & References
+
+### Assumptions
+	
+### References
 - https://thefishsite.com/articles/cultured-aquatic-species-mrigal-carp
 - https://thefishsite.com/articles/cultured-aquatic-species-catla-catla
 - https://nfdb.gov.in/PDF/E%20Publications/12%20Package%20of%20Practices_Breeding%20&%20Culture_Freshwater%20Fish%20Species_October2018.pdf
