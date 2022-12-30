@@ -17,6 +17,7 @@ import { Link, NavLink } from "react-router-dom";
 const pages = [
   { name: "Dashboard", url: "/dashboard" },
   { name: "Market", url: "/marketplace" },
+  { name: "Resources", url: "/resources" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -40,15 +41,15 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position='static' sx={{ backgroundColor: "white" }}>
-      <Container maxWidth='xl'>
+    <AppBar position="static" sx={{ backgroundColor: "white" }}>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
-            variant='h6'
+            variant="h6"
             noWrap
-            component='a'
-            href='/'
+            component="a"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -64,17 +65,17 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
-              size='large'
-              aria-label='account of current user'
-              aria-controls='menu-appbar'
-              aria-haspopup='true'
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color='black'
+              color="black"
             >
               <MenuIcon />
             </IconButton>
             <Menu
-              id='menu-appbar'
+              id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
@@ -94,7 +95,7 @@ function ResponsiveAppBar() {
               {pages.map((pageObj) => (
                 <NavLink to={pageObj.url}>
                   {/* <MenuItem key={pageObj.name} onClick={handleCloseNavMenu}> */}
-                  <Typography textAlign='center'>{pageObj.name}</Typography>
+                  <Typography textAlign="center">{pageObj.name}</Typography>
                   {/* </MenuItem> */}
                 </NavLink>
               ))}
@@ -102,10 +103,10 @@ function ResponsiveAppBar() {
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
-            variant='h5'
+            variant="h5"
             noWrap
-            component='a'
-            href=''
+            component="a"
+            href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
