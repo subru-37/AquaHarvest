@@ -1,11 +1,26 @@
-.button2:hover{
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color:#4CE0D2;
+    border-radius: 25px;
+    padding: 1px 20px;
+    border:3px solid black;
+}
+
+.button2 p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    padding-right: 15px;
+}
+
+.button2:hover {
     background-color: black;
 }
 .button2 p:hover{
     color: #22AAA1;
-}
-.button2{
-    background-color: green;
 }
 .parent-form1{
     width: 60%;
