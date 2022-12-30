@@ -25,8 +25,8 @@ export default function Addfarm() {
       .post("http://localhost:3000/farm/", state)
       .then((data) => {
         console.log(data);
-        navigate("/addTank");
         toast("New farm created!");
+        navigate("/addTank");
       })
       .catch((error) => {
         console.log("Erorr in adding farm:", error);
@@ -280,7 +280,6 @@ export default function Addfarm() {
         >
           Submit
         </button>
-
       </form>
     </div>
   );
