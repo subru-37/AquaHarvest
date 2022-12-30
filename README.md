@@ -90,3 +90,4 @@ The Problem :
 	- https://thefishsite.com/articles/cultured-aquatic-species-catla-catla
 	- https://nfdb.gov.in/PDF/E%20Publications/12%20Package%20of%20Practices_Breeding%20&%20Culture_Freshwater%20Fish%20Species_October2018.pdf
 - The recommended manuring details are from https://farmer.gov.in/imagedefault/handbooks/BooKLet/NAGALAND/20170517165644_fish%20pond.pdf
+- The Subsidy that can be availed is referred from https://dahd.nic.in/related-links/centrally-sponsored-scheme-development-inland-fisheries-and-aquaculture
