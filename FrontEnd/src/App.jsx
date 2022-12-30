@@ -32,12 +32,15 @@ export default function App() {
           <Route path='/signin' element={<SignIn />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/onboarding' element={<Onboarding />}></Route>
+    {/*  <Route path='/product/1' element={<Product1 />}></Route> */}
+          <Route path='/marketplace' element={<Marketplace/>}></Route>
+          <Route path='/product' element={<ProdPage />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/addFarm' element={<Addfarm />}></Route>
           <Route path='/addTank' element={<Addtank />}></Route>
           <Route path='/marketplace' element={<Marketplace />}></Route>
           <Route path='/tank/:tankName' element={<TankPage/>}></Route>
-      </Routes>
+        </Routes>
       </div>
     </ThemeContext.Provider>
   );
