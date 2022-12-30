@@ -269,6 +269,39 @@ export default function Addfarm() {
             }}
           />
         </div>
+        <div className="child-farm">
+          <h4 style={{ width: "30%" }}>Enter Phone no: </h4>
+          <TextField
+            InputProps={{ style: { color: "black" } }}
+            InputLabelProps={{
+              style: { color: "#22AAA1" },
+            }}
+            variant="outlined"
+            label="Phone no:"
+            type='number'
+            name="number"
+            // required
+            autoComplete="off"
+            value={state.pnum}
+            onChange={handleChange}
+            sx={{
+              width: "70%",
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "#4CE0D2",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#4CE0D2",
+                },
+              },
+              "& .MuiOutlinedInput-root:hover": {
+                "& fieldset": {
+                  borderColor: "#4CE0D2",
+                },
+              },
+            }}
+          />
+        </div>
         <button
           style={{
             borderRadius: "15px",
