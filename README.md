@@ -65,7 +65,7 @@ The Problem :
 ## Incentive for farmers to continue use our app once they get habituated
 - Visibility in our platform for even further growth as opposed to a constant set of customers they initially get
 - The sensors are already connected and monitoring is already being done using our platform
-- We offer transportation facility to customers from afar which may be very difficult for new farmers to provide, but is a very good way to attract new customers
+- We offer transportation facility to customers from afar which may be very difficult for new farmers to provide, but is a very good way to attract new customers with our premimum plan.
 
 
 ## Team Members
