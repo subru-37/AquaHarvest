@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useContext, createContext, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Landing from "./pages/landing/Landing";
@@ -25,6 +25,7 @@ export default function App() {
     location: "Kochi",
     tname: "",
     farmName: "fresh farm",
+    ftype:0,
     fishes: 0,
     fnum: 0,
     fname: "",
@@ -33,6 +34,9 @@ export default function App() {
     confirmPassword: "1234",
     fdate: "",
   });
+  useEffect(()=>{
+    console.log(state)
+  },[state])
   return (
     <ThemeContext.Provider value={{ state, setState }}>
       <div>
