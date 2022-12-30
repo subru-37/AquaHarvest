@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../images/background.png");
+  background-image: url("../../images/bckg2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 100px;
   line-height: 72px;
   display: flex;
   justify-content: center;
@@ -21,6 +21,7 @@
   height: 60vh;
   justify-content: center;
   align-items: flex-start;
+  gap: 5rem;
 }
 button .h3 {
   font-family: "Poppins", sans-serif;
@@ -38,4 +39,34 @@ button .h3 {
 }
 .button:hover {
   background-color: #84cae7;
+}
+.farmer-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 10rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.buyer-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 10rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+a{
+  text-decoration: none;
+  color: #000000;
 }
