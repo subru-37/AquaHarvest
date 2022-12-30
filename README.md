@@ -14,7 +14,7 @@
 Our Vision: Promote fish farm cultivation using a sustainable manner while earning profit
 Target Customers: Local Fish farmers
 
-Problem Statements :  
+The Problem :  
 - Many people don't know the benefits of doing aquaponics or doing fish farm cultivation.
 - Even if some realise the benefits, they don't know of proper good resources to actually start the cultivation
 - Once you start the cultivation, the current methods takes time and is prone to trial and error doing the initial days
