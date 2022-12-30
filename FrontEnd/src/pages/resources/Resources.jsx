@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Resources.css";
 import Navbar from "../../components/Navbar/Navbar";
 import fishes from "../../data/fishes.json";
+
 const Resources = () => {
   return (
     <div className="onb-container">
@@ -12,7 +12,7 @@ const Resources = () => {
         <div className="flex flex-row">
           Popular fishes near me
           {fishes.map((fish) => (
-            <div className="LoadTank" key={fish.imgUrl}>
+            <div key={fish.name} className="LoadTank" key={fish.imgUrl}>
               <img src={fish.imgUrl} alt="" width={100} />
               <h1>{fish.name}</h1>
             </div>

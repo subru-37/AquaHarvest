@@ -49,6 +49,7 @@ export default function App() {
           <Route path="/product3" element={<ProdPage />}></Route>
           <Route path="/tank/:tankName" element={<TankPage />}></Route>
           <Route path="/sensor" element={<Addsensor />}></Route>
+          <Route path="/resources" element={<Resources />}></Route>
         </Routes>
       </div>
     </ThemeContext.Provider>
