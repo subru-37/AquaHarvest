@@ -14,29 +14,30 @@ export const ThemeContext = createContext();
 export default function App() {
   initialize();
   const [state, setState] = useState({
-    Name: "",
-    Bio: "",
-    Location: "",
+    Name: "yo",
+    bio: "yo",
+    location: "Kochi",
     tname: "",
+    farmName: "fresh farm",
     fishes: "",
-    Email: "",
-    Password: "",
-    CPassword: "",
+    email: "john@gmail.com",
+    password: "1234",
+    confirmPassword: "1234",
   });
   return (
     <ThemeContext.Provider value={{ state, setState }}>
       <div>
         <Routes>
-          <Route path='/' element={<Landing />}></Route>
-          <Route path='/signin' element={<SignIn />}></Route>
-          <Route path='/signup' element={<Signup />}></Route>
-          <Route path='/onboarding' element={<Onboarding />}></Route>
-    {/*  <Route path='/product/1' element={<Product1 />}></Route> */}
-          <Route path='/marketplace' element={<Marketplace/>}></Route>
-          <Route path='/product' element={<ProdPage />}></Route>
-          <Route path='/dashboard' element={<Dashboard />}></Route>
-          <Route path='/addFarm' element={<Addfarm />}></Route>
-          <Route path='/addTank' element={<Addtank />}></Route>
+          <Route path="/" element={<Landing />}></Route>
+          <Route path="/signin" element={<SignIn />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/onboarding" element={<Onboarding />}></Route>
+          {/*  <Route path='/product/1' element={<Product1 />}></Route> */}
+          <Route path="/marketplace" element={<Marketplace />}></Route>
+          <Route path="/product" element={<ProdPage />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/addFarm" element={<Addfarm />}></Route>
+          <Route path="/addTank" element={<Addtank />}></Route>
         </Routes>
       </div>
     </ThemeContext.Provider>
