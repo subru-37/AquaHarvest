@@ -43,6 +43,7 @@ export default function App() {
           <Route path='/addTank' element={<Addtank />}></Route>
           <Route path='/addFish' element={<AddFish />}></Route>
           <Route path='/marketplace' element={<Marketplace />}></Route>
+          <Route path='/product3' element={<ProdPage />}></Route>
           <Route path='/tank/:tankName' element={<TankPage/>}></Route>
           <Route path='/sensor' element={<Addsensor/>}></Route>
       </Routes>
