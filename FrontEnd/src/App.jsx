@@ -9,6 +9,7 @@ import Marketplace from "./pages/marketplace/Marketplace";
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
 import initialize from "../firebase";
+import ProdPage from "./pages/productPage/ProdPage";
 import Addtank from "./pages/addtank/Addtank";
 import TankPage from "./pages/tank/TankPage";
 import AddFish from "./pages/addFish/AddFish";
