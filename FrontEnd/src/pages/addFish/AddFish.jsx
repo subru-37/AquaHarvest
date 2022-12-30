@@ -17,14 +17,12 @@ export default function Addfarm() {
     });
     // const ref0 = useRef();
     function handleSubmit(event){
-        console.log(state)
         navigate('/sensor')
         event.preventDefault();
     }
     const navigate = useNavigate()
     function handleChange(event){
         const { name, value } = event.target;
-        console.log(name,value)
         setState((preValue) => {
           return {
             ...preValue,
@@ -41,16 +39,16 @@ export default function Addfarm() {
         return arr;
     }
     var arr = Arraygenerate();
+    arr = [0]
   return (
     <div style={{display:'flex', alignItems:'center', flexDirection:'column',justifyContent:'center'}}>
         <div style={{backgroundColor: '#4CE0D2', height: '30vh', width: '100vw',position:'absolute', top:'0px', display:'flex',alignItems:'center', justifyContent:'center'}}>
             <button onClick={()=>(setDis(true))} className='button2'><p>Add A New Fish</p><AddIcon sx={{'& .MuiSvgIcon-root':{color:'black',marginLeft:'15px',border:'2px black solid',borderRadius:'5px'},'& .MuiSvgIcon-root:hover':{color:'#4CE0D2',borderColor:'#4CE0D2'}}} /></button>
         </div>
         <div style={{zIndex: dis ? '1000000': '0', display: dis ? 'flex' : 'none',alignItems:'center', flexDirection:'column',justifyContent:'center', position: 'absolute', minHeight:'90vh',width:'90vw', boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2)', backgroundColor: 'white',top:'0' }}>
-        <form style={{margin:'30px 0'}} className='parent-form1'>
+        <form onSubmit={handleSubmit} style={{margin:'30px 0'}} className='parent-form1'>
         {
             arr.map((value,index)=>{
-                console.log(value)
                 return(
                     <div key={index}><div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <h2>Enter Fish Name: </h2>
