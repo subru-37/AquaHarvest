@@ -7,6 +7,7 @@ import Addfarm from "./pages/addfarm/Addfarm";
 import Marketplace from './pages/marketplace/Marketplace';
 import Signup from "./pages/auth/signup";
 import SignIn from "./pages/auth/signin";
+import ProdPage from "./pages/productPage/ProdPage"
 // import { initialize } from "../firebase";
 
 export const ThemeContext = createContext();
@@ -25,9 +26,11 @@ export default function App() {
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/signin' element={<SignIn />}></Route>
           <Route path='/onboarding' element={<Onboarding />}></Route>
+    {/*  <Route path='/product/1' element={<Product1 />}></Route> */}
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/addFarm' element={<Addfarm />}></Route>
           <Route path='/marketplace' element={<Marketplace/>}></Route>
+          <Route path='/product' element={<ProdPage />}></Route>
         </Routes>
       </div>
     </ThemeContext.Provider>
