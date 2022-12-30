@@ -35,8 +35,8 @@ export default function Addfarm() {
         }
         return arr;
     }
-    const arr = Arraygenerate();
-    console.log(arr)
+    var arr = Arraygenerate();
+    arr = [0]
   return (
     <div style={{display:'flex', alignItems:'center', flexDirection:'column',justifyContent:'center'}}>
         <div style={{backgroundColor: '#4CE0D2', height: '30vh', width: '100vw',position:'absolute', top:'0px', display:'flex',alignItems:'center', justifyContent:'center'}}>
