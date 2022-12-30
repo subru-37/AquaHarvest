@@ -1,6 +1,6 @@
 const Tank = require('../models/Tank');
 module.exports = function(app){
-    app.get('/getProgress', async (req, res) => {
+    app.get('/getProgress', async (err, req, res, next) => {
         res.setHeader('Access-Control-Allow-Credentials', true)
         res.setHeader('Access-Control-Allow-Origin', '*')
         // another common pattern
@@ -21,7 +21,7 @@ module.exports = function(app){
         var days =  parseInt((currentDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
         console.log(days);
         try{
-            var res = Tank.find({tankName: req.query.tankName});
+            var response = await Tank.find({tankName: req.query.tankName});
             res.json(days);
         }catch(err){
             res.status(500).json(err);
