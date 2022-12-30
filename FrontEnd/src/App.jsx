@@ -25,14 +25,14 @@ export default function App() {
     location: "Kochi",
     tname: "",
     farmName: "fresh farm",
-    ftype:0,
+    ftype:1,
     fishes: 0,
-    fnum: 0,
-    fname: "",
+    fnum: [],
+    fname: [],
     email: "john@gmail.com",
     password: "1234",
     confirmPassword: "1234",
-    fdate: "",
+    fdate: [],
   });
   useEffect(()=>{
     console.log(state)
