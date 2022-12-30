@@ -11,6 +11,9 @@
 4. [Assumptions & References](#assumptions)
 5. [Project Demo](#project-demo)
 
+
+Presentation : https://www.canva.com/design/DAFTudil6cU/VFI5qItIGgk8tVm8sh6Z_A/view?utm_content=DAFTudil6cU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Project Description
 
 Our Vision: Promote fish farm cultivation using a sustainable manner while earning profit
@@ -40,6 +43,7 @@ The Problem :
 - Based on the fish data entered, we could provide notifications, alerts etc (eg: Breeding time will be reaching your fish, so do this.)
 - Following these advice, the farmer should, in theory by now have a working fish farm which was started from scratch with us providing all curated resources and free installation of sensors and monitoring in our platform
 - Now it's time for the farmer to make money off of their hard work. Once the cultivation has been completed, the farmer is prompted to add their produce to our marketplace.
+- We'll show subsidies they can avail for various activities.
 
 <img src = "https://ars.els-cdn.com/content/image/1-s2.0-S2352340920313391-gr26.jpg">
 
