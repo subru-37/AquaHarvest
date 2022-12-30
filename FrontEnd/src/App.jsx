@@ -11,6 +11,8 @@ import SignIn from "./pages/auth/signin";
 import initialize from "../firebase";
 
 import Addtank from "./pages/addtank/Addtank";
+import AddFish from "./pages/addFish/AddFish";
+import Addsensor from "./pages/addsensor/Addsensor";
 export const ThemeContext = createContext();
 export default function App() {
   initialize();
@@ -19,10 +21,13 @@ export default function App() {
     Bio: "",
     Location: "",
     tname: "",
-    fishes: "",
+    fishes: 0,
+    fnum:0,
+    fname:'',
     Email: "",
     Password: "",
     CPassword: "",
+    fdate:''
   });
   return (
     <ThemeContext.Provider value={{ state, setState }}>
@@ -35,7 +40,9 @@ export default function App() {
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/addFarm' element={<Addfarm />}></Route>
           <Route path='/addTank' element={<Addtank />}></Route>
+          <Route path='/addFish' element={<AddFish />}></Route>
           <Route path='/marketplace' element={<Marketplace />}></Route>
+          <Route path='/sensor' element={<Addsensor/>}></Route>
         </Routes>
       </div>
     </ThemeContext.Provider>

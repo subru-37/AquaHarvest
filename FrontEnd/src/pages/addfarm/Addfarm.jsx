@@ -230,6 +230,7 @@ export default function Addfarm() {
                 /> 
             </div>
             <button style={{borderRadius:'15px',background:'transparent', width:'150px'}}><p style={{color:'black',fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
+
         </form>
     </div>
   )
