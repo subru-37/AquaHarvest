@@ -1,41 +1,41 @@
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.h2{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
+.h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }
-.section2{
-    display: flex;
-    height: 60vh;
-    justify-content: center;
-    align-items: flex-start;
+.section2 {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: flex-start;
 }
-button .h3{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
+button .h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
 }
-.button{
-    min-width: 15vw;
-    height: 5vh;
-    background: transparent;
-    border-radius: 70px;
+.button {
+  min-width: 15vw;
+  height: 5vh;
+  background: transparent;
+  border-radius: 70px;
 }
-.button:hover{
-    background-color: #84CAE7;
+.button:hover {
+  background-color: #84cae7;
 }

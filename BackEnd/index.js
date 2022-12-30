@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const TankController = require("./controllers/tankController");
+const FishController = require("./controllers/fishController");
 
 mongoose.connect(
     'mongodb+srv://hanna:passwordsss@cluster0.0b10im5.mongodb.net/?retryWrites=true&w=majority', {
@@ -10,6 +12,9 @@ mongoose.connect(
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+TankController(app);
+FishController(app);
 
 
 app.listen(process.env.PORT||3000);
