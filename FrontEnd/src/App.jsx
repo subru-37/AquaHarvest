@@ -28,9 +28,9 @@ export default function App() {
     <ThemeContext.Provider value={{ state, setState }}>
       <div>
         <Routes>
+          <Route path='/' element={<Landing />}></Route>
           <Route path='/signin' element={<SignIn />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
-          <Route path='/' element={<Landing />}></Route>
           <Route path='/onboarding' element={<Onboarding />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/addFarm' element={<Addfarm />}></Route>
