@@ -19,7 +19,6 @@ export default function Addfarm() {
     //     Password:'',
     //     CPassword:''
     //   });
-    navigate("/addTank");
     console.log(state);
     axios
       .post("http://localhost:3000/farm/", state)
@@ -280,8 +279,8 @@ export default function Addfarm() {
             label="Phone no:"
             type='number'
             name="number"
-            // required
             autoComplete="off"
+            //required
             value={state.pnum}
             onChange={handleChange}
             sx={{
