@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import axios from "axios";
 import "./Addfarm.css";
 import TextField from "@mui/material/TextField";
 import { ThemeContext } from "../../App";
 import { useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 export default function Addfarm() {
   const navigate = useNavigate();
@@ -12,13 +14,25 @@ export default function Addfarm() {
     // setState({
     //     Name: "",
     //     Location:'',
-    //     Bio:'',
+    //     bio:'',
     //     Email:'',
     //     Password:'',
     //     CPassword:''
     //   });
-    event.preventDefault();
     navigate("/addTank");
+    console.log(state);
+    axios
+      .post("http://localhost:3000/farm/", state)
+      .then((data) => {
+        console.log(data);
+        toast("New farm created!");
+        navigate("/addTank");
+      })
+      .catch((error) => {
+        console.log("Erorr in adding farm:", error);
+      });
+
+    event.preventDefault();
   }
   function handleChange(event) {
     const { name, value } = event.target;
@@ -60,20 +74,20 @@ export default function Addfarm() {
           Add a new farm
         </p>
       </div>
-      <form onSubmit={handleSubmit} className='parent-form'>
-        <div className='child-farm'>
+      <form onSubmit={handleSubmit} className="parent-form">
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Enter Farm Name: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Farm'
-            name='Name'
+            variant="outlined"
+            label="Farm"
+            name="Name"
             // required
-            autoComplete='off'
-            value={state.Name}
+            autoComplete="off"
+            value={state.farmName}
             onChange={handleChange}
             sx={{
               width: "70%",
@@ -93,19 +107,19 @@ export default function Addfarm() {
             }}
           />
         </div>
-        <div className='child-farm'>
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Enter Email: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Email'
-            name='Email'
+            variant="outlined"
+            label="Email"
+            name="Email"
             // required
-            autoComplete='off'
-            value={state.Email}
+            autoComplete="off"
+            value={state.email}
             onChange={handleChange}
             sx={{
               width: "70%",
@@ -125,20 +139,20 @@ export default function Addfarm() {
             }}
           />
         </div>
-        <div className='child-farm'>
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Enter Password: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Password'
-            name='Password'
+            variant="outlined"
+            label="Password"
+            name="Password"
             // required
-            autoComplete='off'
-            type='password'
-            value={state.Password}
+            autoComplete="off"
+            type="password"
+            value={state.password}
             onChange={handleChange}
             sx={{
               width: "70%",
@@ -158,19 +172,19 @@ export default function Addfarm() {
             }}
           />
         </div>
-        <div className='child-farm'>
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Confirm Password: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Password'
-            name='CPassword'
+            variant="outlined"
+            label="Password"
+            name="CPassword"
             // required
-            autoComplete='off'
-            type='password'
+            autoComplete="off"
+            type="password"
             value={state.CPassword}
             onChange={handleChange}
             sx={{
@@ -191,19 +205,19 @@ export default function Addfarm() {
             }}
           />
         </div>
-        <div className='child-farm'>
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Enter Bio Details: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Bio'
-            name='Bio'
+            variant="outlined"
+            label="Bio"
+            name="Bio"
             // required
-            autoComplete='off'
-            value={state.Bio}
+            autoComplete="off"
+            value={state.bio}
             onChange={handleChange}
             sx={{
               width: "70%",
@@ -223,19 +237,19 @@ export default function Addfarm() {
             }}
           />
         </div>
-        <div className='child-farm'>
+        <div className="child-farm">
           <h4 style={{ width: "30%" }}>Enter Location: </h4>
           <TextField
             InputProps={{ style: { color: "black" } }}
             InputLabelProps={{
               style: { color: "#22AAA1" },
             }}
-            variant='outlined'
-            label='Location'
-            name='Location'
+            variant="outlined"
+            label="Location"
+            name="location"
             // required
-            autoComplete='off'
-            value={state.Location}
+            autoComplete="off"
+            value={state.location}
             onChange={handleChange}
             sx={{
               width: "70%",
@@ -260,17 +274,11 @@ export default function Addfarm() {
             borderRadius: "15px",
             background: "transparent",
             width: "150px",
+            padding: "1rem 2rem",
           }}
+          onClick={handleSubmit}
         >
-          <p
-            style={{
-              color: "black",
-              fontFamily: "'Poppins',sans-serif",
-              fontSize: "1.5rem",
-            }}
-          >
-            Submit
-          </p>
+          Submit
         </button>
       </form>
     </div>
