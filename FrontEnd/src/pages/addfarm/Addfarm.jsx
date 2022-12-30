@@ -19,7 +19,7 @@ export default function Addfarm() {
     //     Password:'',
     //     CPassword:''
     //   });
-
+    navigate("/addTank");
     console.log(state);
     axios
       .post("http://localhost:3000/farm/", state)

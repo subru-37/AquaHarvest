@@ -78,7 +78,7 @@ export default function Addsensor() {
             {/* #22AAA1   #4CE0D2 */}
             </div>
             <button onClick={()=>{
-                navigate('/dashbpard')
+                navigate('/dashboard')
             }} className='button2'><p style={{fontFamily:"'Poppins',sans-serif",fontSize:'1.5rem'}}>Submit</p></button>
 
         </form>
