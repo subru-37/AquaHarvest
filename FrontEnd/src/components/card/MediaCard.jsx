@@ -5,9 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import '../../assets/fish1.jpg'
 import './MediaCard.css'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const MediaCard = (props) => {
   return (

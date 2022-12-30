@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import './marketplace.css';
 import TextField from '@mui/material/TextField';
+import Card from '@mui/material/Card';
 import { Button, CardMedia } from '@mui/material';
 import {InputAdornment} from '@mui/material';
 import searchIcon from '../../assets/frame71.svg';
@@ -8,7 +9,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import data from "../../data/marketdata"
 import MediaCard from '../../components/card/MediaCard'
 
-export default function Marketplace() {
+export default function Marketplace(props) {
 
   const marketdata = data.map((data) => {
     return <MediaCard key={data.id} item={data}/>
@@ -21,7 +22,7 @@ export default function Marketplace() {
               value
           }
       })
-      console.log(value)
+    {/* console.log(value) */}
     }
   return (
     <>
@@ -55,8 +56,9 @@ export default function Marketplace() {
                   }} 
               InputProps={{startAdornment: (
                           <InputAdornment position="start">
-                          <button style={{background:'transparent',border:'none',display: 'flex',position:'relative',right:'35px',zIndex:'10000000'}}>
-                                  <img style={{height:'55px'}} src={searchIcon}></img>
+                          <button style={{background:'transparent',border:'none',display: 'flex',position:'relative',right:'35px',zIndex:'10000000'
+                        }}>
+                            <img style={{height:'55px'}} src={searchIcon}></img>
                           </button>
                           </InputAdornment>),
                           style: {color:'black'}}}
@@ -68,7 +70,7 @@ export default function Marketplace() {
               id="outlined-basic"/>  
       </div>
       <div style={{display:'flex', flexDirection : 'row', marginTop : ' 2.5rem'}}>
-        {marketdata}
+       {marketdata}
       </div>
     </div>
     </>
