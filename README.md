@@ -12,7 +12,8 @@
 5. [Project Demo](#project-demo)
 
 
-Presentation : https://www.canva.com/design/DAFTudil6cU/VFI5qItIGgk8tVm8sh6Z_A/view?utm_content=DAFTudil6cU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Presentation : [PPT Link](https://www.canva.com/design/DAFTudil6cU/VFI5qItIGgk8tVm8sh6Z_A/view?utm_content=DAFTudil6cU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Demo Video](https://drive.google.com/file/d/1egL_tLBTwpI326934vd_q-Up7WAlFMoG/view?usp=share_link)
 
 ## Project Description
 
@@ -84,6 +85,7 @@ The Problem :
 ## Tech Stack
  MERN Stack, Material UI, Replit (hosting)
  [Hosted Link](https://replit.com/@aldrinjenson/AquaHarvest)
+ [Demo Video](https://drive.google.com/file/d/1egL_tLBTwpI326934vd_q-Up7WAlFMoG/view?usp=share_link)
 	
 ## Assumptions  & References
 
