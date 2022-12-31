@@ -83,8 +83,8 @@ The Problem :
 
 
 ## Tech Stack
- MERN Stack, Material UI, Replit (hosting)
- [Hosted Link](https://replit.com/@aldrinjenson/AquaHarvest)
+ MERN Stack, Material UI, Replit (hosting),
+ [Hosted Link](https://replit.com/@aldrinjenson/AquaHarvest),
  [Demo Video](https://drive.google.com/file/d/1egL_tLBTwpI326934vd_q-Up7WAlFMoG/view?usp=share_link)
 	
 ## Assumptions  & References
