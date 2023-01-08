@@ -34,9 +34,9 @@ export default function Marketplace(props) {
               autoComplete='off'
               onChange={handleChange} 
               sx={{
-                  width: '70%',
+                  width: '75%',
                   paddingTop:'30px',
-                  paddingLeft:'60px',
+                  paddingLeft:'80px',
                   display: 'flex' ,
                   '& .MuiOutlinedInput-root':{
                       borderRadius:'20px',
@@ -58,7 +58,7 @@ export default function Marketplace(props) {
                           <InputAdornment position="start">
                           <button style={{background:'transparent',border:'none',display: 'flex',position:'relative',right:'35px',zIndex:'10000000'
                         }}>
-                            <img style={{height:'55px'}} src={searchIcon}></img>
+                            <img style={{height:'48px'}} src={searchIcon}></img>
                           </button>
                           </InputAdornment>),
                           style: {color:'black'}}}
